@@ -5,8 +5,8 @@ import Home from "../routes/Home";
 
 // render 할 router은 사용자의 로그인 여부에 따라 달라질 예정
 // hooks component
-const AppRouter = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+const AppRouter = ({ isLoggedIn }) => {
+
     return (
         <Router>
             <Switch>
